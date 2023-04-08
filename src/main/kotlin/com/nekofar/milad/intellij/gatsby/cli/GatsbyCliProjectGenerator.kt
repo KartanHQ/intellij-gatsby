@@ -11,8 +11,9 @@ import com.nekofar.milad.intellij.gatsby.GatsbyIcons
 import javax.swing.Icon
 
 class GatsbyCliProjectGenerator : NpmPackageProjectGenerator() {
-    private val packageName = "create-gatsby"
-    private val npxCommand = "create-gatsby"
+    private data class PackageInfo(val name: String, val executable: String, val command: String)
+
+    private val packageInfo = PackageInfo("gatsby", "gatsby", "new")
 
     override fun getName(): String = GatsbyBundle.message("gatsby.project.generator.name")
 
@@ -22,17 +23,17 @@ class GatsbyCliProjectGenerator : NpmPackageProjectGenerator() {
 
     override fun customizeModule(virtualFile: VirtualFile, contentEntry: ContentEntry?) {}
 
-    override fun packageName(): String = packageName
+    override fun packageName(): String = packageInfo.name
 
     override fun presentablePackageName(): String =
         GatsbyBundle.message("gatsby.project.generator.presentable.package.name")
 
-    override fun getNpxCommands() = listOf(NpxPackageDescriptor.NpxCommand(packageName, npxCommand))
+    override fun getNpxCommands() = listOf(NpxPackageDescriptor.NpxCommand(packageInfo.name, packageInfo.executable))
 
-    override fun generateInTemp(): Boolean = false
+    override fun generateInTemp(): Boolean = true
 
     override fun generatorArgs(project: Project?, dir: VirtualFile?, settings: Settings?): Array<String> =
-        arrayOf(project?.name.toString())
+        arrayOf(packageInfo.command, project?.name.toString())
 
     override fun getIcon(): Icon = GatsbyIcons.ProjectGenerator
 }
