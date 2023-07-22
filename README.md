@@ -9,12 +9,18 @@
 
 
 <!-- Plugin description -->
-Quickly start building a new [Gatsby](https://gatsbyjs.com/) site within seconds, with everything set up for you.
+[Gatsby](https://gatsbyjs.com/) provides a React-based framework for creating fast, secure, and robust websites. It
+offers an innovative data layer simplifying the integration of various content, APIs, and services into a unified web
+experience.
 
-Whether you're a seasoned pro or just starting out, makes it easy to speed up the setup and initialization phase of your project creation process.
+Our plugin lets you begin building a new site within moments, pre-configuring the setup for you.
+
+Regardless of your experience level, this tool accelerates the setup and initialization phases of your project creation
+process.
 <!-- Plugin description end -->
 
 ## Installation
 
-To install plugin open `Preferences > Plugins > Marketplace`, and search for Gatsby.
+For plugin installation, navigate to `Preferences`, then `Plugins`, and finally `Marketplace`. In the search bar,
+enter `Gatsby`.
 

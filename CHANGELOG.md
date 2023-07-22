@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+## [1.0.8] - 2023-07-22
+
+### Bug Fixes
+
+- Solve some minor issues and update dependencies
+
+### Security
+
+- Update Gradle version and improve Java detection in gradlew
+
 ## [1.0.7] - 2023-07-22
 
 ### Bug Fixes
