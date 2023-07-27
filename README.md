@@ -21,6 +21,5 @@ process.
 
 ## Installation
 
-For plugin installation, navigate to `Preferences`, then `Plugins`, and finally `Marketplace`. In the search bar,
-enter `Gatsby`.
+For plugin installation, navigate to `Preferences`, then `Plugins`, and finally `Marketplace`. In the search bar, enter `Gatsby`.
 
